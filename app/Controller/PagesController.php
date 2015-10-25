@@ -73,4 +73,18 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+	
+/**
+ * Displays a view
+ *
+ * @return void
+ * @throws NotFoundException When the view file could not be found
+ *	or MissingViewException in debug mode.
+ */
+	public function home() {
+		echo "Helloworld! This is first message from Conficence.";
+		
+	}
+	
+	
 }
